@@ -67,44 +67,44 @@ particlesJS("particles-js", {
       },
     },
   },
-  //   interactivity: {
-  //     detect_on: "canvas",
-  // events: {
-  //   onhover: {
-  //     enable: true,
-  //     mode: "bubble",
-  //   },
-  //   onclick: {
-  //     enable: true,
-  //     mode: "repulse",
-  //   },
-  //   resize: true,
-  // },
-  // modes: {
-  //   grab: {
-  //     distance: 150,
-  //     line_linked: {
-  //       opacity: 1,
-  //     },
-  //   },
-  //   bubble: {
-  //     distance: 200,
-  //     size: 40,
-  //     duration: 2,
-  //     opacity: 8,
-  //     speed: 3,
-  //   },
-  //   repulse: {
-  //     distance: 200,
-  //     duration: 0.2,
-  //   },
-  //   push: {
-  //     particles_nb: 4,
-  //   },
-  //   remove: {
-  //     particles_nb: 2,
-  //   },
-  // },
-  //   },
-  //   retina_detect: true,
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "bubble",
+      },
+      onclick: {
+        enable: true,
+        mode: "repulse",
+      },
+      resize: true,
+    },
+    modes: {
+      grab: {
+        distance: 150,
+        line_linked: {
+          opacity: 1,
+        },
+      },
+      bubble: {
+        distance: 200,
+        size: 40,
+        duration: 2,
+        opacity: 8,
+        speed: 3,
+      },
+      repulse: {
+        distance: 200,
+        duration: 0.2,
+      },
+      push: {
+        particles_nb: 4,
+      },
+      remove: {
+        particles_nb: 2,
+      },
+    },
+  },
+  retina_detect: true,
 });
