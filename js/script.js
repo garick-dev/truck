@@ -20,7 +20,7 @@ particlesJS("particles-js", {
         nb_sides: 5,
       },
       image: {
-        src: "truck/img/snowflake4.png",
+        src: "..img/snowflake4.png",
         width: 100,
         height: 100,
       },
