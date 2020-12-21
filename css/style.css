@@ -30,7 +30,7 @@ body {
     .header-top__title {
       line-height: 150%;
       font-size: calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
-      -webkit-font-size: calc( 16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+      -webkit-: font-size calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
       display: block; }
     @media (max-width: 800px) {
       .header-top__title {
@@ -41,7 +41,7 @@ body {
       text-decoration: none;
       font-weight: 700;
       font-size: calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
-      -webkit-font-size: calc( 16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+      -webkit-: font-size calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
       color: #ffdbb7; }
   @media (max-width: 800px) {
     .header-top {
@@ -59,9 +59,10 @@ body {
   font-weight: 400;
   text-align: center; }
   .content-outer .content-inner .content__title {
+    line-height: 150%;
     font-size: calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
-    -webkit-font-size: calc( 12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
-    line-height: 150%; }
+    -webkit-: font-size calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+    color: #d10505; }
 
 .calc-button {
   display: block;
