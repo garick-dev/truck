@@ -26,6 +26,7 @@ body {
     .header-top__title {
       line-height: 150%;
       font-size: calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+      font-size: calc(16px + (16-14) * ((100% - 320px) / (1920 - 320)));
       display: block; }
     @media (max-width: 800px) {
       .header-top__title {
@@ -54,6 +55,7 @@ body {
   text-align: center; }
   .content-outer .content-inner .content__title {
     font-size: calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(12px + (16-14) * ((100% - 320px) / (1920 - 320)));
     line-height: 150%; }
 
 .calc-button {
@@ -106,9 +108,11 @@ body {
       margin-top: 20px; }
     .popup .calk__title {
       margin-top: 20px;
-      font-size: calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320))); }
+      font-size: calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+      font-size: calc(16px + (16-14) * ((100% - 320px) / (1920 - 320))); }
     .popup .calk .calk-check-nigth {
       font-size: calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+      font-size: calc(16px + (16-14) * ((100% - 320px) / (1920 - 320)));
       margin: 10px 0;
       display: flex;
       justify-content: center;
