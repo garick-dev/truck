@@ -138,6 +138,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: auto 0;
+    color: #fdf8df;
     &-service__text {
       margin-top: 20px;
     }
@@ -147,7 +148,10 @@ body {
     }
     .calk-check-nigth {
       @include title-size();
-      margin: 20px;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       label {
         margin-left: 20px;
       }
@@ -157,14 +161,26 @@ body {
       @include font-lora();
       margin: 10px 0;
     }
-    select,
-    input {
+    #calk-cartype,
+    #calk-city {
+      margin: 0 auto;
+      width: 75%;
+      line-height: 30px;
+      text-align: center;
       @include text-size();
       @include font-roboto();
     }
     .calk-wheel {
       @include text-size();
       @include font-roboto();
+      input {
+        margin: 0 auto;
+        width: 75%;
+        line-height: 30px;
+        text-align: center;
+        @include text-size();
+        @include font-roboto();
+      }
     }
     #final_price {
       @include text-size();
@@ -172,14 +188,17 @@ body {
       margin: 5px;
     }
     .final_price {
-      @include text-size();
+      @include title-size();
+      font-weight: bold;
       @include font-lora();
+      margin-bottom: 20px;
+      text-decoration: underline;
     }
   }
 }
 @media (max-width: 500px) {
   .popup {
-    width: 300px;
+    width: 90%;
   }
 }
 
@@ -254,8 +273,7 @@ body {
   line-height: 50px;
 }
 @media (max-width: 500px) {
-  #result-1,
-  #result-4 {
+  #result-1 {
     font-size: 15px;
   }
 }

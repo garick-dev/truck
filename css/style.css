@@ -100,7 +100,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto 0; }
+    margin: auto 0;
+    color: #fdf8df; }
     .popup .calk-service__text {
       margin-top: 20px; }
     .popup .calk__title {
@@ -108,31 +109,48 @@ body {
       font-size: calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320))); }
     .popup .calk .calk-check-nigth {
       font-size: calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
-      margin: 20px; }
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       .popup .calk .calk-check-nigth label {
         margin-left: 20px; }
     .popup .calk__text {
       font-size: calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
       font-family: "Lora", serif;
       margin: 10px 0; }
-    .popup .calk select,
-    .popup .calk input {
+    .popup .calk #calk-cartype,
+    .popup .calk #calk-city {
+      margin: 0 auto;
+      width: 75%;
+      line-height: 30px;
+      text-align: center;
       font-size: calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
       font-family: "Roboto", sans-serif; }
     .popup .calk .calk-wheel {
       font-size: calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
       font-family: "Roboto", sans-serif; }
+      .popup .calk .calk-wheel input {
+        margin: 0 auto;
+        width: 75%;
+        line-height: 30px;
+        text-align: center;
+        font-size: calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+        font-family: "Roboto", sans-serif; }
     .popup .calk #final_price {
       font-size: calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
       font-family: "Lora", serif;
       margin: 5px; }
     .popup .calk .final_price {
-      font-size: calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
-      font-family: "Lora", serif; }
+      font-size: calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: bold;
+      font-family: "Lora", serif;
+      margin-bottom: 20px;
+      text-decoration: underline; }
 
 @media (max-width: 500px) {
   .popup {
-    width: 300px; } }
+    width: 90%; } }
 
 .close-popup {
   position: absolute;
@@ -196,8 +214,7 @@ body {
   line-height: 50px; }
 
 @media (max-width: 500px) {
-  #result-1,
-  #result-4 {
+  #result-1 {
     font-size: 15px; } }
 
 .bottom {
