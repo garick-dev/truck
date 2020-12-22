@@ -11,15 +11,11 @@
   color: #ffdbb7;
 }
 @mixin title-size {
-  font-size: -webkit-calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
-  font-size: -moz-calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
-  font-size: calc(16px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(16px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
 }
 
 @mixin text-size {
-  font-size: -webkit-calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
-  font-size: -moz-calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
-  font-size: calc(12px + (16-14) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(12px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
 }
 
 * {
@@ -140,14 +136,10 @@ body {
   text-decoration: none;
   @include font-lora();
   font-weight: 700;
-  font-size: 20px;
+  @include text-size();
   line-height: 250%;
 }
-@media (max-width: 768px) {
-  .calc-button {
-    font-size: 14px;
-  }
-}
+
 .calc-button:hover {
   cursor: pointer;
 }
@@ -330,7 +322,7 @@ body {
   }
   @media (max-width: 1024px) {
     img {
-      width: 28%;
+      width: 18%;
     }
   }
 }
