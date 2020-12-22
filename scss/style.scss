@@ -348,22 +348,3 @@ body {
   z-index: -1;
   overflow: hidden;
 }
-
-// .message {
-//   width: 100%;
-//   height: 100vh;
-//   display: none;
-//   justify-content: center;
-//   align-items: center;
-//   @include text-color();
-//   @include title-size();
-//   @include font-lora();
-//   font-weight: 700;
-//   &__image {
-//     width: 10%;
-//     margin: 30px;
-//   }
-//   &__text {
-//     margin-top: 20px;
-//   }
-// }
