@@ -121,19 +121,10 @@ body {
     justify-content: center;
     margin: auto 0;
     color: #fdf8df; }
-    .popup .calk-service__text {
-      margin-top: 20px; }
     .popup .calk__title {
       margin-top: 20px;
-      font-size: calc(16px + (30 - 14) * ((100vw - 320px) / (1920 - 320))); }
-    .popup .calk .calk-check-nigth {
       font-size: calc(16px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
-      margin: 10px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .popup .calk .calk-check-nigth label {
-        margin-left: 20px; }
+      font-weight: 400; }
     .popup .calk__text {
       font-size: calc(12px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
       font-family: "Lora", serif;
@@ -145,7 +136,22 @@ body {
       line-height: 30px;
       text-align: center;
       font-size: calc(12px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
-      font-family: "Roboto", sans-serif; }
+      font-family: "Roboto", sans-serif;
+      font-weight: 700; }
+    .popup .calk-service__text {
+      font-size: calc(16px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
+      font-family: "Lora", serif;
+      font-weight: 400;
+      margin-top: 20px; }
+    .popup .calk .calk-check-nigth {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .popup .calk .calk-check-nigth label {
+        font-size: calc(12px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
+        font-weight: 400;
+        margin-left: 20px; }
     .popup .calk .calk-wheel {
       font-size: calc(12px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
       font-family: "Roboto", sans-serif; }
@@ -155,9 +161,10 @@ body {
         line-height: 30px;
         text-align: center;
         font-size: calc(12px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
-        font-family: "Roboto", sans-serif; }
+        font-family: "Roboto", sans-serif;
+        font-weight: 700; }
     .popup .calk #final_price {
-      font-size: calc(12px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
+      font-size: calc(16px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
       font-family: "Lora", serif;
       margin: 5px; }
     .popup .calk .final_price {
@@ -243,9 +250,9 @@ body {
     position: absolute;
     right: 0;
     bottom: 0; }
-  @media (max-width: 1024px) {
+  @media (max-width: 600px) {
     .bottom img {
-      width: 18%; } }
+      width: 27%; } }
 
 #particles-js {
   position: absolute;

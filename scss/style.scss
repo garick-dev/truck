@@ -170,30 +170,19 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: auto 0;
+
     color: #fdf8df;
-    &-service__text {
-      margin-top: 20px;
-    }
     &__title {
       margin-top: 20px;
       @include title-size();
-    }
-    .calk-check-nigth {
-      @include title-size();
-
-      margin: 10px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      label {
-        margin-left: 20px;
-      }
+      font-weight: 400;
     }
     &__text {
       @include text-size();
       @include font-lora();
       margin: 10px 0;
     }
+
     #calk-cartype,
     #calk-city {
       margin: 0 auto;
@@ -202,10 +191,32 @@ body {
       text-align: center;
       @include text-size();
       @include font-roboto();
+      font-weight: 700;
     }
+
+    &-service__text {
+      @include title-size();
+      @include font-lora();
+      font-weight: 400;
+      margin-top: 20px;
+    }
+
+    .calk-check-nigth {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      label {
+        @include text-size();
+        font-weight: 400;
+        margin-left: 20px;
+      }
+    }
+
     .calk-wheel {
       @include text-size();
       @include font-roboto();
+
       input {
         margin: 0 auto;
         width: 75%;
@@ -213,10 +224,11 @@ body {
         text-align: center;
         @include text-size();
         @include font-roboto();
+        font-weight: 700;
       }
     }
     #final_price {
-      @include text-size();
+      @include title-size();
       @include font-lora();
       margin: 5px;
     }
@@ -320,9 +332,9 @@ body {
     right: 0;
     bottom: 0;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 600px) {
     img {
-      width: 18%;
+      width: 27%;
     }
   }
 }
@@ -336,3 +348,22 @@ body {
   z-index: -1;
   overflow: hidden;
 }
+
+// .message {
+//   width: 100%;
+//   height: 100vh;
+//   display: none;
+//   justify-content: center;
+//   align-items: center;
+//   @include text-color();
+//   @include title-size();
+//   @include font-lora();
+//   font-weight: 700;
+//   &__image {
+//     width: 10%;
+//     margin: 30px;
+//   }
+//   &__text {
+//     margin-top: 20px;
+//   }
+// }
