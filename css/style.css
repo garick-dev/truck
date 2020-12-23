@@ -60,10 +60,17 @@ body {
     .header-top__phone {
       display: block;
       line-height: 150%;
+      padding: 0 10px;
       text-decoration: none;
       font-weight: 700;
       font-size: calc(16px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
       color: #ffdbb7; }
+      .header-top__phone:hover {
+        opacity: 0.9;
+        color: #fa6a6a;
+        border-right: 1px solid #fa6a6a;
+        border-left: 1px solid #fa6a6a;
+        transition: 0.3s ease; }
   @media (max-width: 800px) {
     .header-top {
       flex-direction: column;

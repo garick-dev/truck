@@ -98,12 +98,21 @@ body {
       display: block;
 
       line-height: 150%;
+      padding: 0 10px;
 
       text-decoration: none;
       font-weight: 700;
       @include title-size();
-
       @include text-color();
+
+      &:hover {
+        opacity: 0.9;
+        color: rgb(250, 106, 106);
+
+        border-right: 1px solid rgb(250, 106, 106);
+        border-left: 1px solid rgb(250, 106, 106);
+        transition: 0.3s ease;
+      }
     }
   }
   @media (max-width: 800px) {
