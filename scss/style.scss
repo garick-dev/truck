@@ -85,7 +85,13 @@ body {
 
     @media (max-width: 800px) {
       img {
+        width: 25%;
         margin-bottom: 30px;
+      }
+    }
+    @media (max-width: 500px) {
+      img {
+        width: 28%;
       }
     }
     &__phone {
