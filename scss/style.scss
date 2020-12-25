@@ -1,3 +1,4 @@
+@import "../scss/normalize.scss";
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:ital,wght@0,400;1,700&display=swap");
 
 @mixin font-lora {
@@ -10,6 +11,11 @@
 @mixin text-color {
   color: #ffdbb7;
 }
+
+@mixin header-size {
+  font-size: calc(25px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
+}
+
 @mixin title-size {
   font-size: calc(16px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
 }
@@ -18,9 +24,11 @@
   font-size: calc(12px + (24 - 14) * ((100vw - 320px) / (1920 - 320)));
 }
 
-* {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: "NewYearTitle";
+  src: url("../fonts/19516.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
 
 html {
@@ -53,8 +61,9 @@ body {
     align-items: center;
     &__title {
       line-height: 150%;
-      @include title-size();
+      font-family: "NewYearTitle";
       display: block;
+      @include header-size();
     }
     @media (max-width: 800px) {
       &__title {
@@ -96,13 +105,12 @@ body {
     }
     &__phone {
       display: block;
-
       line-height: 150%;
       padding: 0 10px;
-
+      font-family: "NewYearTitle";
       text-decoration: none;
       font-weight: 700;
-      @include title-size();
+      @include header-size();
       @include text-color();
 
       &:hover {
@@ -130,7 +138,7 @@ body {
   align-items: center;
   height: 300px;
   @include text-color();
-  @include font-roboto();
+  @include font-lora();
 
   font-weight: 400;
   text-align: center;
@@ -149,6 +157,7 @@ body {
   border-radius: 30px;
   @include text-color();
   text-decoration: none;
+
   @include font-lora();
   font-weight: 700;
   @include text-size();
@@ -188,14 +197,19 @@ body {
 
     color: #fdf8df;
     &__title {
-      margin-top: 20px;
+      margin-top: 50px;
       @include title-size();
       font-weight: 400;
+    }
+    @media (max-width: 768px) {
+      &__title {
+        margin-top: 0;
+      }
     }
     &__text {
       @include text-size();
       @include font-lora();
-      margin: 10px 0;
+      margin: 5px 0;
     }
 
     #calk-cartype,
@@ -213,7 +227,7 @@ body {
       @include title-size();
       @include font-lora();
       font-weight: 400;
-      margin-top: 20px;
+      // margin-top: 20px;
     }
 
     .calk-check-nigth {
@@ -240,6 +254,11 @@ body {
         @include text-size();
         @include font-roboto();
         font-weight: 700;
+      }
+      @media (max-width: 768px) {
+        input {
+          line-height: 15px;
+        }
       }
     }
     #final_price {
