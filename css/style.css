@@ -337,9 +337,9 @@ body {
     align-items: center; }
     .header-top__title {
       line-height: 150%;
-      font-family: "NewYearTitle";
       display: block;
-      font-size: calc(25px + (30 - 14) * ((100vw - 320px) / (1920 - 320))); }
+      font-size: calc(18px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
+      font-family: "Roboto", sans-serif; }
     @media (max-width: 800px) {
       .header-top__title {
         margin-bottom: 30px; } }
@@ -369,10 +369,10 @@ body {
       display: block;
       line-height: 150%;
       padding: 0 10px;
-      font-family: "NewYearTitle";
       text-decoration: none;
       font-weight: 700;
-      font-size: calc(25px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
+      font-size: calc(18px + (30 - 14) * ((100vw - 320px) / (1920 - 320)));
+      font-family: "Roboto", sans-serif;
       color: #ffdbb7; }
       .header-top__phone:hover {
         opacity: 0.9;
